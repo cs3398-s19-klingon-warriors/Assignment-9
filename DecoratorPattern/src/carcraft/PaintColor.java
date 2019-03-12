@@ -3,6 +3,7 @@ package carcraft;
  *
  * @author Serena Gutierrez
  */
+
 public class PaintColor extends CarOptions{
    
     public String color;

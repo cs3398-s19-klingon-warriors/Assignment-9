@@ -1,5 +1,7 @@
 package carcraft;
-
+/*
+Each team member's CarMain.java file should differ, per assignment requirements
+*/
 
 public class CarMain {
 

@@ -11,6 +11,6 @@ abstract class CarOptions implements ICar {
 
 	public String GetDescription() {
 
-		return specialCar.GetDescription();
+		return specialCar.getDescription();
 	}
 }

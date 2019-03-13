@@ -9,7 +9,7 @@ public class CarMain {
         
         System.out.println("Starting: Creating Cars with decorator pattern\n"); 
         
-        ICar custom = new SuperCharger(new SportWheels(new PaintColor(new AirScoop(new BasicCar()), "red")));
+        ICar custom = new SuperCharger(new SportWheels(new PaintColor(new AirScoop(new LiftKit(new BasicCar())), "red")));
         
         System.out.println(custom.getDescription());
 		

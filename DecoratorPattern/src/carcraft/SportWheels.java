@@ -1,7 +1,7 @@
 package carcraft;
 /**
  *
- * @author Abel Shinabery
+ * @author 
  */
 public class SportWheels extends CarOptions{
    

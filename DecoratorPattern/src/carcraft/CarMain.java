@@ -60,10 +60,7 @@ public class CarMain {
 	System.out.println(ultimate.getDescription()) ;
 
 	System.out.println("\nSo many good cars! Goodbye!");
-        
-//	ICar custom = new SuperCharger(new SportWheels(new PaintColor(new AirScoop(new LiftKit(new BasicCar())), "red")));
-        
-//	System.out.println(custom.getDescription());
+
 	}
 
 }

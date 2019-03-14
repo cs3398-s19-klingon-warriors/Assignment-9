@@ -5,16 +5,18 @@
 
 package carcraft;
 
-public class AirScoop extends CarOptions() {
+public class AirScoop extends CarOptions {
 
-	public String my_scoop;
-
-	public AirScoop(String scoop_foo) {
-		System.out.println("AirScoop Constructor... scoops the air?");
-    this.scoop = scoop_foo;
+	public AirScoop(ICar specialCar) {
+        super(specialCar);
 	}
 
 	@Override
 	public String getDescription() {
-		return "with" + this.scoop + "my_scoop";
+		return specialCar.getDescription() + addAirScoop();
 	}
+    
+    public String addAirScoop() {
+        return " with an air scoop";
+    }
+}

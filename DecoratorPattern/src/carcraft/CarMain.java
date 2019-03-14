@@ -6,13 +6,20 @@ Each team member's CarMain.java file should differ, per assignment requirements
 public class CarMain {
 
 	public static void main(String[] args) {
-
-		ICar car = new SuperCharger(new BasicCar());
-		System.out.println(car.GetDescription());
-
-		CarOptions car1 = new AirScoop(new PaintColor(new SportWheels(new SuperCharger(new CarOptions(),"SuperCharger_type"), "SportWheels_type"), "PaintColor_type"), "AirScoop_type");
-
-				System.out.println("Done. " + AirScoop.GetDescription());
+        
+        System.out.println("Starting: Creating Cars with decorator pattern\n"); 
+        
+        ICar custom = new SuperCharger(new SportWheels(new PaintColor(new AirScoop(new LiftKit(new BasicCar())), "red")));
+        
+        System.out.println(custom.getDescription());
+		
+        
+        
+//
+//		CarOptions car1 = new AirScoop(new PaintColor(new SportWheels(new SuperCharger(new BasicCar()), "SportWheels_type"), "PaintColor_type"), "AirScoop_type");
+//        
+//        System.out.println("Done. " + car1.GetDescription());
+        
 		/*	Original CarMain
 
 		System.out.println("Starting:  Creating Cars without Decorator Pattern\n");

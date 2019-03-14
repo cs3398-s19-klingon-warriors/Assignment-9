@@ -39,7 +39,17 @@ public class CarMain {
 	System.out.println(chargeScoop.getDescription()) ;
  
 	System.out.println("\nJust to double-check that we haven't really changed our original Basic car.");
-		System.out.println(myBasic.getDescription());
+	System.out.println(myBasic.getDescription());
+
+	// quick test of ICar with special class implementation
+	System.out.println("\nTest Liskov substitution by making an ICar instance with a custom class");
+
+	ICar onlySport = new SportWheels(sportyExtra);
+		
+	System.out.println(onlySport.getDescription());
+
+
+
 
 
 	

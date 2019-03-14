@@ -27,6 +27,6 @@ public class SportWheels extends CarOptions
     
 	public String addSportWheels()
 	{
-		return " with sport wheels of type " + this.SportWheels + ". vroom vroom.";
+		return " with sport wheels of type " + this.SportWheels + "(vroom vroom)";
 	}
 }

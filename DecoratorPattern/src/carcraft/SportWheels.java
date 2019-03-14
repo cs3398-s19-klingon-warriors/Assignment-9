@@ -1,21 +1,32 @@
 package carcraft;
 /**
- *
- * @author 
+ * Rachel Kelmenson
  */
-public class SportWheels extends CarOptions{
-   
+public class SportWheels extends CarOptions
+{
+	public String SportWheels ;		
     
-    public SportWheels(ICar specialCar) {
-        super(specialCar);
-    }
+	// default constructor
+	public SportWheels(ICar specialCar)
+	{
+		super(specialCar);
+		this.SportWheels = "wheels!" ;
+	}
+
+	public SportWheels(ICar specialCar, String wheels)
+	{
+		super(specialCar);
+		this.SportWheels = wheels ;
+	}
     
-    @Override
-    public String getDescription(){
-        return specialCar.getDescription() + addSportWheels();
-    }
+	@Override
+	public String getDescription()
+	{
+		return specialCar.getDescription() + addSportWheels();
+	}
     
-    public String addSportWheels(){
-        return " with sport wheels";
-    }
+	public String addSportWheels()
+	{
+		return " with sport wheels of type " + this.SportWheels + ". vroom vroom.";
+	}
 }

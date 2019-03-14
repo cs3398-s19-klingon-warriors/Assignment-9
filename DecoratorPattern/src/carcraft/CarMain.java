@@ -18,6 +18,8 @@ public class CarMain {
 	ICar myBasic = new BasicCar();
 	System.out.println(myBasic.getDescription());
 
+	// TEMPORARY TEST of super versus specialCar
+
 
 	System.out.println("\nNow let's make types out of this existing basic car.");
 
@@ -27,6 +29,11 @@ public class CarMain {
 	ICar sporty = new SportWheels(myBasic) ;
 	System.out.println(sporty.getDescription()) ;
 
+
+	// Commented out for TEMPORARY TEST of super versus specialCar
+
+
+	/*
 
 	// custom car 2
 	System.out.println("\nNow SportWheels(Basic)) with parameterized sport constructor.");
@@ -58,6 +65,8 @@ public class CarMain {
 	System.out.println("\nNow let's make a car with all 5 decorator classes!");
 	ICar ultimate = new AirScoop(new SuperCharger(new LiftKit(new PaintColor(new SportWheels(new BasicCar(), "snow tires"), "fire engine red")))) ;
 	System.out.println(ultimate.getDescription()) ;
+
+*/
 
 	System.out.println("\nSo many good cars! Goodbye!");
 

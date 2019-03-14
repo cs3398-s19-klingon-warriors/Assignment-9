@@ -38,6 +38,10 @@ public class CarMain {
 	ICar chargeScoop = new SuperCharger(new AirScoop(myBasic)) ;
 	System.out.println(chargeScoop.getDescription()) ;
  
+	System.out.println("\nJust to double-check that we haven't really changed our original Basic car.");
+		System.out.println(myBasic.getDescription());
+
+
 	
 	System.out.println("\nNow let's directly make custom cars without using the basic from earlier.");
 	 

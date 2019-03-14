@@ -7,6 +7,10 @@ public class PaintColor extends CarOptions{
    
     public String color;
 
+    public PaintColor(ICar specialCar){
+        super(specialCar);
+        this.color = "Primer";
+    }
     public PaintColor(ICar specialCar, String color) {
         super(specialCar);
         this.color = color;
